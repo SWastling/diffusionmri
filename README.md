@@ -317,7 +317,7 @@ cerebro-spinal fluid (CSF) for spherical deconvolution using
 15. Produce a map of the tissue volume fractions (only if data is multi-shell)
 using [mrconvert](https://mrtrix.readthedocs.io/en/latest/reference/commands/mrconvert.html) and 
 [mrcat](https://mrtrix.readthedocs.io/en/latest/reference/commands/mrcat.html):
-    1.
+    1. Create the map of tissue volume fractions:
         ```bash
         mrconvert -coord 3 0 wm_fod.mif - | mrcat csf_fod.mif gm_fod.mif - tissue_vf.mif
         ```
