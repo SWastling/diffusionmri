@@ -262,12 +262,12 @@ cerebro-spinal fluid (CSF) for spherical deconvolution using
         ```    
     2. Create a brain mask with bet with `f` and `g` parameters set to their default values:
         ```bash
-        bet b0_upsamp.nii b0_upsamp_mask.nii.gz -n -m
+        bet b0_upsamp.nii b0_upsamp -n -m
         ```
     3. Visually check the resulting brain mask using 
     [fsleyes](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes): 
         ```bash
-        fsleyes b0_upsamp.nii b0_upsamp -cm yellow -a 90
+        fsleyes b0_upsamp.nii b0_upsamp_mask.nii.gz -cm yellow -a 90
         ```
     4. Repeat steps ii and iii with different `f` and `g` parameters if the brain
     mask is not correct
