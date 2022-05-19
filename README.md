@@ -267,7 +267,7 @@ cerebro-spinal fluid (CSF) for spherical deconvolution using
     3. Visually check the resulting brain mask using 
     [fsleyes](https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/FSLeyes): 
         ```bash
-        fsleyes b0_upsamp.nii b0_upsamp_mask.nii.gz -cm yellow -a 90
+        fsleyes b0_upsamp.nii b0_upsamp -cm yellow -a 90
         ```
     4. Repeat steps ii and iii with different `f` and `g` parameters if the brain
     mask is not correct
@@ -291,7 +291,7 @@ cerebro-spinal fluid (CSF) for spherical deconvolution using
 12. Calculating the fractional anisotropy (FA) and first eigenvector (EV) maps with 
 [tensor2metric](https://mrtrix.readthedocs.io/en/latest/reference/commands/tensor2metric.html):
     ```bash
-    tensor2metric -mask b0_upsamp_mask.mif -fa fa.mif -ev ev.mif dt.mif
+    tensor2metric -mask b0_upsamp_mask.mif -fa fa.mif -vector ev.mif dt.mif
     ```
 13. Visually check the resulting FA and EV maps using 
 [mrview](https://mrtrix.readthedocs.io/en/latest/reference/commands/mrview.html):
