@@ -11,7 +11,7 @@ a multi-band spin-echo echo-planar imaging (SE-EPI) pulse sequence.
 
 Five separate series are acquired:
     
-| Series | Phase encode direction | b-value | number of directions | b-value | number of directions |  
+| Series | Phase encode direction | b-value | number of directions | b-value | number of volumes |  
 |---|---|---|---|---|---|
 | 1 | anterior-posterior | 2500 | 75 | 0 | 5 |
 | 2 | posterior-anterior | 0 | 4 | | |
